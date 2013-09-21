@@ -13,7 +13,7 @@ var soap = {
   },
 
   unwrap : function (xml) {
-    return JSON.parse(parser.toJson(xml))["soap:Envelope"]["soap:Body"]["tns:getDeparturesResponse"]["Departure"]
+    return JSON.parse(parser.toJson(xml))["soap:Envelope"]["soap:Body"]["tns:getDeparturesResponse"]["Departure"];
   }
 };
 
