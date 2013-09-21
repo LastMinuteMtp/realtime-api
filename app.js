@@ -23,8 +23,6 @@ soap.call = function (stopId, callback, lineId) {
   });
 };
 
-soap.filter =
-
 app.get('/realtime/:stop/:line?', function (req, resp) {
   soap.call(req.params.stop, function (json) {
     resp.json(json);
